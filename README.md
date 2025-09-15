@@ -1,25 +1,14 @@
 # alx-project-nexus
 
 
-- An **overview of the ProDev Backend Engineering program**
-- My **major learnings from ProDev Frontend Engineering**, including technologies, concepts, challenges, solutions, best practices, and personal takeaways.
+A documentation showcasing my learnings, projects, and best practices from the **ALX ProDev Frontend Engineering program (Week 1 – 12).**
 
 ---
 
-## Overview — ProDev Backend Engineering Program
-
-The **Backend Engineering program** equips learners with the skills to build secure, scalable, and reliable server-side systems and APIs that power modern applications.
-
-### Core Topics Covered
-- RESTful & GraphQL API design and implementation
-- Database modeling with SQL (Postgres, MySQL) and NoSQL (MongoDB, Redis)
-- Authentication and authorization (JWT, OAuth)
-- Testing: unit tests, integration tests, validation
-- Deployment & DevOps fundamentals (Docker, CI/CD, environment management)
-- System design patterns: caching, load balancing, horizontal scaling
-- Observability: logging, monitoring, error tracking, metrics
-
-This backend foundation supports the development of full-stack, production-ready applications.
+## Overview
+The **ProDev Frontend Engineering program** was a 12-week journey covering the foundations and advanced topics of frontend development.  
+I explored **Semantic HTML, modern CSS preprocessors (SASS/SCSS), TypeScript, React with Next.js, Redux, GraphQL, PWA, and Mobile Development with React Native**.  
+This repository documents my **projects, learnings, challenges, and best practices**.  
 
 ---
 
