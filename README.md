@@ -1,5 +1,55 @@
 # alx-project-nexus
 
+# Dynamic E-Commerce Product Catalog
+
+## Project Overview
+This prject simulates a real-world e-commerce scenerio, focusing on balacing functional requirements with user experience considerations. It involves building a dynmanic product catalog where users can browse, filter, and sort products seamlessly across Web, Mobile and PWA platforms.
+
+---
+
+## Project Goals
+The primary objectives are:
+
+1. **API Integration**: For fetching and displaying product data dynmaically from the APIs.
+2. **User Convenience**: Implement filtering and sporting to improve product discovery.
+3. **Enhanced Experience**: Create a responsive, user-friendly interface with smooth navigation and optimised performance.
+
+---
+
+## Technologies Used
+- **React/React Native**: Component-based UI development.
+- **Redux**: Efficient state management.
+- **TypeScript**: Type safety and maintainable codebase.
+- **Tailwind CSS**: Modern, responsive styling.
+
+---
+
+## Key Features
+### 1. API Data Integration
+- Fetch and display product data dynamically from a backend API.
+- -Handle loading states and error messages gracefully.
+
+### 2. Filtering and Sorting
+- View products by categoty filtering.
+- Price sorting of each product in ascending and descending order.
+- Combined multiple filters through for detailed relts through multi-criteria filtering.
+
+### 3. Pagination & Infinite Scrolling 
+- Using pagination to view chunck of products in a numbered navigation.
+- Using infinite scrolling to as a user scroll to seamlessly load more products.
+
+### 4. Responsive Design
+- Enables the application to work seamlessly across desktops, tablets and mobile devices.
+   
+
+
+
+
+
+
+
+
+## Documentation of ALX ProDev Frontend Engineering program
 
 A documentation showcasing my learnings, projects, and best practices from the **ALX ProDev Frontend Engineering program (Week 1 – 12).**
 
