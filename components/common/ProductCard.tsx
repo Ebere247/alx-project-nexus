@@ -26,16 +26,16 @@ export default function ProductCard({ product }: ProductCardProps) {
           />
 
           {/* Overlay button */}
-          <button
-            className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center 
-              rounded-full text-white text-lg font-bold opacity-0 gap-2
-              group-hover:opacity-100 transition-all duration-300 transform scale-75 
-              group-hover:scale-100 "
+          <div
+            className="absolute inset-0 m-auto flex items-center justify-center 
+             rounded-full text-white text-lg font-bold opacity-0 gap-2
+             group-hover:opacity-100 transition-all duration-300 transform scale-75 
+             group-hover:scale-100 z-10"
           >
             <CartIcon />
             <SearchIcon />
             <LoveIcon />
-          </button>
+          </div>
         </div>
 
         <div className="text-center">
