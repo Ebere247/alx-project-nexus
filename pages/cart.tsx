@@ -3,7 +3,7 @@ import CartList from "@/components/cart/CartList";
 
 export default function CartPage() {
   return (
-    <Layout>
+    <>
       <title>Your Cart - Shop</title>
       <meta
         name="description"
@@ -14,6 +14,6 @@ export default function CartPage() {
         <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
         <CartList />
       </section>
-    </Layout>
+    </>
   );
 }

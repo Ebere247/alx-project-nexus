@@ -2,6 +2,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { products } from "@/constants/products";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   const { id } = req.query;
   const productId = Number(id);
 

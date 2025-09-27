@@ -1,4 +1,4 @@
-// pages/api/products/products.ts
+// pages/api/products/index.ts
 import type { NextApiRequest, NextApiResponse } from "next";
 import { products as constantProducts } from "@/constants/products";
 import { Product } from "@/interfaces";
@@ -12,16 +12,18 @@ export default function handler(
   res: NextApiResponse<Product[] | ErrorResponse>
 ) {
   try {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
     let filtered = [...constantProducts];
 
     const { category, availability, minPrice, maxPrice, sort } = req.query;
 
-    // 1️⃣ Category filter
+    // 1️ Category filter
     if (typeof category === "string" && category !== "All") {
       filtered = filtered.filter((p) => p.type === category);
     }
 
-    // 2️⃣ Availability filter
+    // 2️ Availability filter
     if (typeof availability === "string") {
       if (availability === "in-stock") {
         filtered = filtered.filter((p) =>
@@ -38,7 +40,7 @@ export default function handler(
       }
     }
 
-    // 3️⃣ Price range filter
+    // 3️ Price range filter
     if (minPrice && !isNaN(Number(minPrice))) {
       const min = Number(minPrice);
       filtered = filtered.filter((p) => Number(p.price) >= min);
@@ -49,7 +51,7 @@ export default function handler(
       filtered = filtered.filter((p) => Number(p.price) <= max);
     }
 
-    // 4️⃣ Sorting
+    //  Sorting
     if (typeof sort === "string") {
       if (sort === "Price: Low to High") {
         filtered.sort((a, b) => Number(a.price) - Number(b.price));
@@ -60,7 +62,7 @@ export default function handler(
       }
     }
 
-    // ✅ Return filtered & sorted products
+    //  Return filtered & sorted products
     res.status(200).json(filtered);
   } catch (error) {
     console.error("API Error:", error);

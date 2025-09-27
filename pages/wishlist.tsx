@@ -3,7 +3,7 @@ import WishlistList from "@/components/common/WishlistList";
 
 export default function WishlistPage() {
   return (
-    <Layout>
+    <>
       <title>Your Wishlist - Shop</title>
       <meta
         name="description"
@@ -13,6 +13,6 @@ export default function WishlistPage() {
         <h1 className="text-2xl font-bold mb-4">Your Wishlist</h1>
         <WishlistList />
       </section>
-    </Layout>
+    </>
   );
 }
