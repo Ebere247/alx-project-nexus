@@ -47,7 +47,7 @@ const productSlice = createSlice({
 
 export const { setFilter, clearFilter, setSort } = productSlice.actions;
 
-// ✅ selector: filtered + sorted products
+// selector: filtered + sorted products
 export const selectFilteredSortedProducts = (state: {
   products: ProductState;
 }) => {

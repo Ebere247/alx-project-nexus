@@ -23,7 +23,7 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     rehydrateCart: (state) => {
-      state.items = loadCart(); // ✅ restore cart from localStorage
+      state.items = loadCart(); // restore cart from localStorage
     },
 
     addToCart: (state, action: PayloadAction<CartItem>) => {

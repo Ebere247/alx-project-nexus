@@ -12,7 +12,9 @@ export default function ProductDetailsPage() {
   const { id } = router.query;
 
   // Build full API URL
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    "https://alx-project-nexus-vton.vercel.app";
   const endpoint = id ? `${baseUrl}/api/products/${id}` : null;
 
   // Fetch one product from API using SWR
@@ -46,10 +48,7 @@ export default function ProductDetailsPage() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-white text-gray-800">
       {/* Sidebar menu */}
-      <MenuList
-        onSelect={handleSelect}
-        selectedId={product?.id || 0} // ✅ matches MenuList prop
-      />
+      <MenuList onSelect={handleSelect} selectedId={product?.id || 0} />
 
       {/* Product details */}
       <main className="flex-1 p-6">
