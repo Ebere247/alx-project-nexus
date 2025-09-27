@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --font-nunito: "Nunito Sans", sans-serif;
+  --font-frank: "Frank Ruhl Libre", serif;
+  --font-andika: "Andika", sans-serif;
+  --font-shadows: "Shadows Into Light", cursive;
+}
+
+.font-nunito {
+  font-family: var(--font-nunito);
+}
+.font-frank {
+  font-family: var(--font-frank);
+}
+.font-andika {
+  font-family: var(--font-andika);
+}
+.font-shadows {
+  font-family: var(--font-shadows);
+}
