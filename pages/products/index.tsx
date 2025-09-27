@@ -3,10 +3,8 @@ import useSWR from "swr";
 import Dropdown from "@/components/common/DropDown";
 import Sidebar from "@/components/common/Sidebar";
 import Pagination from "@/components/common/Pagination";
-// import { CartIcon, LoveIcon, SearchIcon } from "@/components/common/Icons";
 import fetcher from "@/lib/fetcher";
 import { Product } from "@/interfaces";
-// import ProductCard from "@/components/common/ProductCard";
 
 export default function ProductsPage() {
   const [sortOption, setSortOption] = useState<string>("Featured");
@@ -64,12 +62,6 @@ export default function ProductsPage() {
 
   return (
     <div className="p-6">
-      {/* <div className="flex gap-4 mb-6 justify-end">
-        <SearchIcon />
-        <CartIcon />
-        <LoveIcon />
-      </div> */}
-
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-xl font-bold">All Products</h1>
         <Dropdown
